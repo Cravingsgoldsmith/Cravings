@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    #image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+    #search-bar {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Image Showcase</h1>
+
+<div id="search-bar">
+  <label for="search">Search:</label>
+  <input type="text" id="search" name="q" placeholder="Type your search here">
+  <button type="button">Search</button>
+</div>
+
+<div id="image-container">
+  <img class="image" src="https://via.placeholder.com/150" alt="Image 1">
+  <img class="image" src="https://via.placeholder.com/150" alt="Image 2">
+  <img class="image" src="https://via.placeholder.com/150" alt="Image 3">
+  <img class="image" src="https://via.placeholder.com/150" alt="Image 4">
+  <img class="image" src="https://via.placeholder.com/150" alt="Image 5">
+  <img class="image" src="https://via.placeholder.com/150" alt="Image 6">
+  <img class="image" src="https://via.placeholder.com/150" alt="Image 7">
+  <img class="image" src="https://via.placeholder.com/150" alt="Image 8">
+</div>
+
+</body>
+</html>
+
