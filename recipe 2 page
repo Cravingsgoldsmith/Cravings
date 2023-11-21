@@ -6,7 +6,7 @@
   <title>Delicious Pasta Recipe</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Georgia, serif;
       margin: 20px;
     }
     h2 {
