@@ -5,56 +5,6 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <style>
-        body
-        {
-            background-color: rgb(239, 222, 205);
-            font-family: Georgia, serif;
-            
-        }
-        h1, h2, h3, h4, p, li
-        {
-            font-family: Georgia, serif;
-            color: black;
-        }
-
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .image-container{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            ;
-        }
-
-        .text {
-            font-size: 25px;
-            padding-left: 20px;
-        } 
-        .column {
-            float:left;
-            width: 45%;
-        }
-        .row:after {
-            content:"";
-            display:table;
-            clear:both;
-        }
-        footer {
-          background-color: #c78f6a;
-          padding: 10px;
-          text-align: center;
-          color: white;
-        }
-        a {
-            text-decoration: none;
-        }
-
-    </style>
         <input type="checkbox" id="check" />
         <label for="check">
         <i style="font-size:24px" class="fa" id="btn">&#xf0c9;</i>
@@ -104,15 +54,15 @@
 
     </div>
     <br>
-    <div class="h2" style ="text-align: center; font-size: 25px; margin-left: 40px;">
+    <div class="h2" id="recipepagetitle">
         <h2>Falafel recipe </h2>
     </div>
 
                 
-    <img src="falafelbanner.jpg" alt="falafelbanner" style="margin-bottom: 50px;">
+    <img src="falafelbanner.jpg" alt="falafelbanner" id="recipebanner">
 
     <div class="row"> 
-        <div class="column" style= "margin-left: 40px; font-size: 20px;line-height:1;">
+        <div class="column2" id="recipeinfo">
             <div>
                 <p><b>Serving: </b>6</p>
                 <p><b>Total time: </b>20 minutes </p>
@@ -120,7 +70,7 @@
                 <p><b>Cooking time: </b>10 mins</p>
             </div> 
             <h2>Ingredients</h2>
-            <ul style="line-height: 2;">
+            <ul class="ingredientslist">
                 <li>2 tbsp sunflower or vegetable oil</li>
                 <li>1 small onion, finely chopped</li>
                 <li>1 garlic clove, crushed</li>
@@ -132,7 +82,7 @@
             </ul> 
             <section class="review-box">
                 <h2>Leave us a Review</h2>
-                    <div class="stars" style="font-size: 35px;">
+                    <div class="stars" >
                         <span class="star" onclick="rateProduct(1)">★</span>
                         <span class="star" onclick="rateProduct(2)">★</span>
                         <span class="star" onclick="rateProduct(3)">★</span>
@@ -140,15 +90,15 @@
                         <span class="star" onclick="rateProduct(5)">★</span>
                     </div>
                     <br>
-                    <textarea id="reviewText" placeholder="Write your review here..." rows="4" style="width: 50%;"></textarea>
+                    <textarea id="reviewText" placeholder="Write your review here..." rows="4" ></textarea>
                     <br>
                     <button onclick="submitReview()">Submit Review</button>
              </section>
         </div>
     
-        <div class="column" style= "margin-left: 60px; font-size: 20px;">
-            <h2 style="margin-left: -40px;">Method</h2>
-            <div style="line-height: 1.5; margin-left: -40px;">
+        <div class="recipecontent">
+            <h2 >Method</h2>
+            <div class="recipecontent2">
                 <h4>Step 1: </h4>
                 <P>Heat 1 tbsp oil in a large pan, then fry the onion and garlic over a low heat for 5 mins until softened. </p>
                 <h4>Step 2:</h4>
@@ -159,9 +109,7 @@
                 <p>Mould the mix into 6 balls, then flatten into patties.</p>
                 <h4>Step 5: </h4>
                 <p>Heat the remaining oil in the pan, then fry the falafels on a medium heat for 3 mins on each side, until golden brown and firm.</p>
-                    <a href="https://www.bbcgoodfood.com/recipes/spicy-falafels">
-                        <p style ="color: #76441bce;">Read More...</p>
-                    </a>
+                    <a id="readmore" href="https://www.bbcgoodfood.com/recipes/spicy-falafels">Read More...</a>
             </div>
         </div>
      </div>
@@ -171,15 +119,15 @@
         
         <div class="row"> 
 
-          <div style ="text-align: center; word-spacing: 40px; " >
+          <div class="footerimg">
               <a href="https://www.instagram.com/goldsmithsisoc/">
-                  <img src="instagram.jpg" width="65"height="65" style = "border: 7px solid #8d572bce">
+                  <img src="instagram.jpg" width="65"height="65">
               </a>
               <a href="https://www.tiktok.com/discover/Goldsmiths-isoc">
-                  <img src="tiktok.jpg" width="65"height="65" style = "border: 7px solid #8d572bce">
+                  <img src="tiktok.jpg" width="65"height="65">
               </a>
           </div>
-          <p>Email: contact@cravings.com </p>
+          <p>Email: <a id="emailcontact" href="mailto:contact@cravings.com">contact@cravings.com</a></p>
       </div>
         </footer>   
 </body>
